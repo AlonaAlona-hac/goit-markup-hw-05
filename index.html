@@ -355,6 +355,46 @@
             </div>
         </section>
     </main>
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-button">
+                <button class="modal-close-btn">&times;</button>
+            </div>
+            <h4 class="modal-tittle">Leave your contacts and we will call you back</h4>
+            <form class="modal-form" name="order-service" autocomplete="off">
+                <label class="form-label">
+                    <svg width="12" height="12" class="modal-icon">
+                        <use href="./images/modal-icons.svg#icon-person-black-18dp-1"></use>
+                    </svg> Name
+                    <input class="form-input" type="text" name="username">
+                </label>
+                <label class="form-label">
+                    <svg width="12" height="12" class="modal-icon">
+                        <use href="./images/modal-icons.svg#icon-phone-black-18dp-1"></use>
+                    </svg> Phone
+                    <input class="form-input" type="tel" name="phone">
+                </label>
+                <label class="form-label">
+                    <svg width="12" height="12" class="modal-icon">
+                        <use href="./images/modal-icons.svg#icon-email-black-18dp-1"></use>
+                    </svg> Email
+                    <input class="form-input" type="email" name="email">
+                </label>
+                <label class="form-label">
+                    Comment
+                    <textarea class="form-input" name="comment" rows="5" placeholder="text">
+                    </textarea>
+                </label>
+                <label class="checkbox-label">
+                    <input class="checkbox" type="checkbox" name="agree">I accept the terms and conditions of the
+                    <span>Privacy Policy</span>
+                </label>
+                <button type="button" class="modal-button">
+                    Order Service
+                </button>
+            </form>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footer-content container">
             <div class="container-footer">
@@ -397,6 +437,19 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="subscribe-container">
+                <p class="subsc-text">Subscribe</p>
+                <form class="subscribe-form">
+                    <label class="subsc-form-label">
+                        <input class="email-form" type="email" name="email" placeholder="E-mail" required>
+                    </label>
+                    <button class="form-submit-btn" type="submit">Subscribe
+                        <svg class="footer-icon">
+                            <use href="./images/footer-icon.svg#icon-Frame-3"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>

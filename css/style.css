@@ -425,3 +425,157 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.modal-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 408px;
+  max-width: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.modal-button {
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+}
+
+.modal-tittle {
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-form input,
+.modal-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.form-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.form-input {
+}
+.comment-text {
+}
+.modal-icon {
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  fill: #999;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+.checkbox {
+}
+.agree-text {
+}
+.modal-button {
+  background: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.modal-button:hover {
+  background: darkblue;
+}
+
+.subscribe-container {
+  width: 453px;
+  height: 80px;
+  margin-left: 80px;
+  padding-bottom: 132px;
+}
+.subsc-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  max-width: 75px;
+  margin-bottom: 16px;
+}
+.subscribe-form {
+  display: flex;
+}
+.subsc-form-label {
+  margin-right: 24px;
+}
+.email-form {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #2e2f42;
+}
+.email-form :required {
+}
+.form-submit-btn {
+  display: flex;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-icon {
+}
