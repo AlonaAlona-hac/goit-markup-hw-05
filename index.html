@@ -50,7 +50,9 @@
         <section class="business">
             <div class="container">
                 <h1 class="business-h-one">Effective Solutions for Your Business</h1>
-                <button type="button" class="button-bsns">Order Service</button>
+                <div class="button">
+                    <a href="#modal" class="button-bsns">Order Service</a>
+                </div>
             </div>
         </section>
         <section class="features section">
@@ -355,42 +357,40 @@
             </div>
         </section>
     </main>
-    <div class="modal-overlay">
+    <div id="modal" class="modal-overlay is-hidden">
         <div class="modal">
-            <div class="modal-button">
-                <button class="modal-close-btn">&times;</button>
-            </div>
+            <button class="modal-close-btn" onclick="history.back();">&times;</button>
             <h4 class="modal-tittle">Leave your contacts and we will call you back</h4>
             <form class="modal-form" name="order-service" autocomplete="off">
-                <label class="form-label">
+                Name<label class="form-label">
                     <svg width="12" height="12" class="modal-icon">
                         <use href="./images/modal-icons.svg#icon-person-black-18dp-1"></use>
-                    </svg> Name
-                    <input class="form-input" type="text" name="username">
+                    </svg>
+                    <input class="form-input" type="text" name="name">
                 </label>
-                <label class="form-label">
+                Phone<label class="form-label">
                     <svg width="12" height="12" class="modal-icon">
                         <use href="./images/modal-icons.svg#icon-phone-black-18dp-1"></use>
-                    </svg> Phone
+                    </svg>
                     <input class="form-input" type="tel" name="phone">
                 </label>
-                <label class="form-label">
+                E-mail<label class="form-label">
                     <svg width="12" height="12" class="modal-icon">
                         <use href="./images/modal-icons.svg#icon-email-black-18dp-1"></use>
-                    </svg> Email
+                    </svg>
                     <input class="form-input" type="email" name="email">
                 </label>
-                <label class="form-label">
-                    Comment
-                    <textarea class="form-input" name="comment" rows="5" placeholder="text">
+                Comment<label class="form-label">
+                    <textarea class="form-input" name="comment" rows="5" placeholder="Text input">
                     </textarea>
                 </label>
                 <label class="checkbox-label">
-                    <input class="checkbox" type="checkbox" name="agree">I accept the terms and conditions of the
-                    <span>Privacy Policy</span>
+                    <input class="checkbox" type="checkbox" name="agree"><span></span>I accept the terms and conditions
+                    of
+                    the <a href="/">Privacy Policy</a></span>
                 </label>
-                <button type="button" class="modal-button">
-                    Order Service
+                <button type="submit" class="modal-button">
+                    Send
                 </button>
             </form>
         </div>
