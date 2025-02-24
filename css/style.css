@@ -536,7 +536,7 @@ img {
   display: flex;
   align-items: center;
 }
-.modal-item {
+.model-item {
   margin-bottom: 8px;
 }
 
@@ -596,16 +596,8 @@ img {
   fill: #2e2f42;
 }
 
-.modal-form-comment {
-  margin-bottom: 8px;
-}
-.comment-fill {
-  margin-bottom: 16px;
-}
-
 .checkbox-area {
-  margin-bottom: 24px;
-  gap: 8px;
+  margin-bottom: 16px;
 }
 .visually-hidden {
   opacity: 0;
@@ -613,22 +605,15 @@ img {
   width: 0;
   height: 0;
 }
-.visually-hidden:checked + .custom-checkbox .custom-checkbox-span {
+.visually-hidden:checked + .user-privacy .custom-checkbox-span {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
 }
 
-.visually-hidden:checked
-  + .custom-checkbox
-  .custom-checkbox-span
-  .checkbox-svg {
-  background-color: #404bbf;
-}
 .checkbox-label {
   display: flex;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -653,7 +638,9 @@ img {
 .checkbox-svg {
   opacity: 0;
 }
-
+.comment-area {
+  margin-bottom: 16px;
+}
 .agree-text {
   line-height: 1.33;
   text-decoration: underline;
@@ -670,6 +657,7 @@ img {
   color: #fff;
   border-radius: 4px;
   padding: 16px 32px;
+  border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   min-width: 169px;
@@ -695,11 +683,14 @@ img {
   width: 264px;
   height: 40px;
   padding-left: 16px;
+  line-height: 2;
+  letter-spacing: 0.04em;
   background-color: transparent;
   font-size: 12px;
   outline: transparent;
   font-weight: 400;
   color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .email-form::placeholder {
   color: #fff;
@@ -714,6 +705,7 @@ img {
 }
 .subsc-form-label {
   margin-right: 24px;
+  gap: 24px;
 }
 .subsc-text {
   font-weight: 500;
@@ -730,14 +722,16 @@ img {
   justify-content: center;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  cursor: pointer;
   letter-spacing: 0.04em;
   color: #fff;
+  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-submit-btn:hover {
@@ -748,6 +742,6 @@ img {
 }
 
 .footer-icon {
-  margin-left: 8px;
+  margin-left: 16px;
   fill: #fff;
 }
